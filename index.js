@@ -28,7 +28,7 @@ request.get(completeUrl, (_, res, body) => {
 
     const fs = require('fs')
     images.forEach(image => {
-        var file = fs.createWriteStream(`${__dirname}/${image}.jpg`);
+        var file = fs.createWriteStream(`${process.cwd()}/${image}.jpg`);
         request.get(`https://cf.shopee.co.id/file/${image}`).pipe(file)
     });
 
