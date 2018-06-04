@@ -6,6 +6,18 @@ Sopi is a Shopee image downloader.
 
 I can't download Shopee product images! Why they make it so hard!
 
+## Installation
+
+```
+$ npm i -g sopi
+```
+
+Or just use NPX
+
+```
+$ npx sopi ... 
+```
+
 ## Usage
 
 ```
@@ -23,6 +35,12 @@ Usage: sopi <url> <options>
 
 ```
 $ sopi https://shopee.co.id/Jaket-Bomber-Metalik-Anak-i.1902863.53878688 -o ~/Desktop
+```
+
+with NPX:
+
+```
+$ npx sopi https://shopee.co.id/Jaket-Bomber-Metalik-Anak-i.1902863.53878688 -o ~/Desktop
 ```
 
 This will download "Jaket Bomber" images to `~/Desktop` directory
