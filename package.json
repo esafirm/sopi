@@ -13,6 +13,7 @@
   "author": "@esafirm",
   "license": "MIT",
   "dependencies": {
+    "@types/request": "^2.47.1",
     "cheerio": "^1.0.0-rc.2",
     "commander": "^2.15.1",
     "request": "^2.87.0"
