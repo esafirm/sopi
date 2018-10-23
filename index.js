@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+const idGenerator = require('./IdGenerator');
 
 program
   .usage('<url> <options>')
@@ -79,6 +80,8 @@ request.get(completeUrl, (_, res, body) => {
     let file = fs.createWriteStream(fileName);
     request.get(`https://cf.shopee.co.id/file/${image}`).pipe(file);
   });
+
+  idGenerator.write(url, outputDirectory);
 
   console.log(`Downloaded ${images.length} iamge(s)`);
   console.log('Completed ✅');
