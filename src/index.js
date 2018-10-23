@@ -2,6 +2,7 @@
 
 const program = require('commander');
 const idGenerator = require('./IdGenerator');
+const metaGenerator = require('./MetaGenerator');
 
 program
   .usage('<url> <options>')
@@ -34,7 +35,7 @@ if (!parsedUrl.hostname) {
 }
 
 if (parsedUrl.hostname.toLowerCase().includes('tokopedia')) {
-  const topedProcessor = require('./dist/TopedProcessor');
+  const topedProcessor = require('../dist/TopedProcessor');
   topedProcessor.process(url);
   return;
 }
@@ -82,6 +83,7 @@ request.get(completeUrl, (_, res, body) => {
   });
 
   idGenerator.write(url, outputDirectory);
+  metaGenerator.write(parsed, outputDirectory);
 
   console.log(`Downloaded ${images.length} iamge(s)`);
   console.log('Completed ✅');
