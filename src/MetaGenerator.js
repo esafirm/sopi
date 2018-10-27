@@ -6,7 +6,7 @@ const config = require('../config');
 
 // @param body response body of sophee item
 module.exports.write = function(url, parsedBody, outputDir) {
-  const id = '\n\nID: ${idGenerator.generate(url)';
+  const id = `\n\nID: ${idGenerator.generate(url)}`;
   const desc =
     config.descPrefix + parsedBody.item.description + id + config.descSuffix;
 
