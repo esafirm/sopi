@@ -83,7 +83,7 @@ request.get(completeUrl, (_, res, body) => {
   });
 
   idGenerator.write(url, outputDirectory);
-  metaGenerator.write(parsed, outputDirectory);
+  metaGenerator.write(url, parsed, outputDirectory);
 
   console.log(`Downloaded ${images.length} iamge(s)`);
   console.log('Completed ✅');
