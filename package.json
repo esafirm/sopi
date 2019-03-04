@@ -10,6 +10,10 @@
   "bin": {
     "sopi": "src/index.js"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/esafirm/sopi"
+  },
   "author": "@esafirm",
   "license": "MIT",
   "dependencies": {
