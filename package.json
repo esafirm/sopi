@@ -1,6 +1,6 @@
 {
   "name": "sopi",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "sopi": "src/index.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/esafirm/sopi"
+    "type": "git",
+    "url": "https://github.com/esafirm/sopi"
   },
   "author": "@esafirm",
   "license": "MIT",
